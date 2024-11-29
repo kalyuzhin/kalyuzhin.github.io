@@ -269,6 +269,7 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 30px;
 }
 
 .contacts-item {
@@ -284,8 +285,15 @@ h2 {
     height: auto;
 }
 
+.contacts h3 {
+    text-align: center;
+}
+
 /* Footer */
 
+.footer {
+    border-top: #fdfdff solid 1px;
+}
 
 .hidden {
     display: none;
