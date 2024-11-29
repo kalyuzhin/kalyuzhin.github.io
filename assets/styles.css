@@ -17,6 +17,12 @@ body {
     font-family: "Chakra Petch", sans-serif;
 }
 
+@media (max-width: 784px){
+    body {
+        font-size: 14px;
+    }
+}
+
 .container {
     margin-inline: auto;
     margin: auto;
@@ -82,16 +88,29 @@ button:hover {
     font-size: 24px;
 }
 
+@media (max-width: 784px) {
+    .header {
+        display: none;
+    }
+}
+
 /* Main */
 
 .main {
     margin-top: 100px;
 }
 
+@media (max-width: 784px) {
+    .main {
+        margin-top: 20px;
+    }
+}
+
 /* Hero section */
 
 .hero {
     display: flex;
+    flex-direction: row;
     width: 50%;
     margin: 0 auto;
     margin-bottom: 25px;
@@ -137,6 +156,25 @@ button:hover {
     border: 3px solid #fdfdff;
 }
 
+@media (max-width: 784px) {
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 64px;
+    }
+
+    .hero h2 {
+        font-size: 52px;
+    }
+
+    .hero-img img {
+        width: 100%;
+    }
+}
+
 /* About section */
 
 h2 {
@@ -151,7 +189,7 @@ h2 {
 
 .about-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin: 0 auto;
     column-gap: 15px;
     /* border: 1px solid #fdfdff; */
@@ -172,6 +210,16 @@ h2 {
 
 .about-container li:nth-child(even){
     color: #999;
+}
+
+@media (max-width: 784px){
+    .about-left {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
 }
 
 /* Technologies section */
@@ -213,6 +261,18 @@ h2 {
 @keyframes scroll {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-340%); }
+}
+
+@media (max-width: 784px) {
+    .technologies-item img {
+        width: 80px;
+        height: auto;
+    }
+
+    @keyframes scroll {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-800%); }
+    }
 }
 
 
@@ -257,6 +317,18 @@ h2 {
     border-radius: 5px;
 }
 
+@media (max-width: 784px) {
+
+    .projects-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .projects-item img {
+        width: 250px;
+        height: 150px;
+    }
+}
+
 /*  Contacts section */
 
 .contacts {
@@ -287,6 +359,13 @@ h2 {
 
 .contacts h3 {
     text-align: center;
+}
+
+@media (max-width: 784px) {
+    .contacts-item img {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 /* Footer */
