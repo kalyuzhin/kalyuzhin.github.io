@@ -16,3 +16,14 @@ document.addEventListener('DOMContentLoaded', () =>{
                 });
             });
 });
+
+function updateAge(){
+    const currentTime = new Date();
+    const birthday = new Date('April 7, 2004, 09:30:00');
+    const ageElement = document.getElementById('age');
+    const millisecondInYear = 31557600000;
+    ageElement.textContent = ((currentTime - birthday) / millisecondInYear).toFixed(9);
+}
+
+setInterval(updateAge, 50)
+
